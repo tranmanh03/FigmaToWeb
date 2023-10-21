@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sen:wght@700&display=swap');
+
+:root {
+    --padding-hai-ben: calc((100% - 1170px) / 2);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,5 +15,419 @@ html {
 }
 
 body {
+    height: 5000px;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+/* Header */
+.header {
+    height: 900px;
+    background: #FFFCF4;
+    margin: 0 auto;
+}
+
+.header-top {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 var(--padding-hai-ben);
+    height: 100px;
+    background: #FFFCF4;
+    z-index: 10;
+}
+
+.header-logo {
+    cursor: pointer;
+    width: 85px;
+    height: 34px;
+}
+
+.header-nav {
+    margin-left: auto;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 70px;
+}
+
+.header-nav ul li.active a {
+    color: #171100;
+}
+
+.header-nav ul a {
+    text-decoration: none;
+    padding: 10px 21px;
+    color: #5F5B53;
+}
+
+.btn {
+    color: #fff;
+    height: 50px;
+    min-width: 118px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 24.5px;
+    background: #171100;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn.btn-signUp {
+    min-width: 144px;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    padding: 0 var(--padding-hai-ben);
+    padding-top: calc(100px + 64px);
+}
+
+.header-work {
+    flex: 1;
+    position: relative;
+}
+
+.work {
+    position: absolute;
+    right: 20px;
+    bottom: 48px;
+    width: 270px;
+    height: 244px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.list-work {
+    padding: 24px;
+    list-style: none;
+}
+
+.list-work li {
+    display: flex;
+    margin-top: 18px;
+}
+
+.list-work li:first-child {
+    margin-top: 0;
+}
+
+.design-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FFF9E8;
+}
+
+.develop-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FCEFFF;
+}
+
+.marketing-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #EBEAFF;   
+}
+
+.course {
+    margin-left: 16px;
+}
+
+.sum-course {
+    font-size: 1.4rem;
+    color: #5F5B53;
+}
+
+.title-course {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.header-avatar {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    background: url(../image/avatar.png), lightgray -448.75px 0px / 218.672% 100% no-repeat;
+}
+
+.header-content .content-course {
+    flex: 1;
+}
+
+.course-wrap {
+    padding: 64px 0 64px 110px;
+}
+
+.course-wrap .title-course {
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 6.8rem;
+    letter-spacing: -1.16px;
+}
+
+.course-desc {
+    margin-top: 22px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.course-btn {
+    display: flex;
+    margin-top: 38px;
+}
+
+.see-course {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600; 
+    background: #FFB900;
+    border: none;
+    outline: none;
+    height: 64px;
+    width: 180px;
+    border-radius: 32px;
+}
+
+.course-watch {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.course-watch svg {
+    position: relative;
+    top: 6px;
+}
+
+.watch-video {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.engagement {
+    padding-top: 48px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.course-describle {
+    margin-top: 8px;
+}
+
+.student-count ,
+.course-count {
+    display: inline-block;
+}
+
+.course-count {
+    margin-left: 28px;
+}
+
+.course-count p,
+.student-count p {
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.course-count strong,
+.student-count strong{
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+/*content*/
+.content {
+    margin-top: 140px;
+}
+
+.popular-course {
+    position: relative;
+    width: 100%;
+    padding: 0 var(--padding-hai-ben);
+}
+
+.popular-course h1 {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -0.76px;
+}
+
+.popular-desc {
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+}
+
+.three-course {
+    margin-top: 55px;
+    display: flex;
+    grid-gap: 30px;
+}
+
+.popular-course_info {
+    flex: 1;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular-course_info img {
+    width: 370px;
+    height: 278px;
+    border-radius: 12px 12px 0px 0px;
+    background: lightgray; 
+}
+
+.popular-course_info img:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.popular-course_info-body {
+    padding: 16px 22px 22px 22px;
+}
+
+.popular-header_stars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-header_stars h2 {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.popular-header_stars svg {
+    position: relative;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    margin: 0 6px 0 auto;
+}
+
+.popular-header_stars span {
+    color: #FEA31B;
     font-size: 1.6rem;
 }
+
+.popular-course_info-body {
+    margin-top: 6px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+}
+
+.popular-course_buy {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-course_buy span {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.course-pagation {
+    cursor: pointer;
+    position: absolute;
+    right: var(--padding-hai-ben);
+    top: 42px;
+}
+
+/*student*/
+
+.student-profile {
+    height: 360px;
+    background: #2E2100;
+    color: #fff;
+    display: flex;
+    margin-top: 140px;
+}
+
+.student-info {
+    padding: 86px 0 0 var(--padding-hai-ben);
+}
+
+.student-info img {
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+}
+
+.student-name {
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+.student-majors {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    margin-top: 4px;
+}
+
+.student-info svg {
+    margin-top: 28px;
+}
+
+.student-slogan {
+    margin-left: 270px;
+    flex: 1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.student-slogan p {
+    color: #FFF;
+    font-size: 2.6rem;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    padding-right: 135px;
+    transform: translateY(-50%);
+}
+
+.student-slogan svg {
+    position: absolute;
+    top: 78px;
+    left: -30px;
+}
+
+
+
